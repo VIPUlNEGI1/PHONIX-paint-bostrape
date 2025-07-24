@@ -141,7 +141,7 @@
                                                                 <li><a href="shop-2-col-right-sidebar.html">Shop 2 col right</a></li>
                                                             </ul>
                                                         </li>  -->
-                                                      <li><a href="https://sai-shree-waterproofing.vercel.app/" target="_blank" rel="noopener noreferrer">Chemical</a></li>
+                                                      <!-- <li><a href="https://sai-shree-waterproofing.vercel.app/" target="_blank" rel="noopener noreferrer">Chemical</a></li> -->
 
                                                     <li><a href="ElastoBond.html">ElastoBond</a></li>
                                                     <li><a href="ElastoWhitePU.html">ElastoWhitePU</a></li>
@@ -270,7 +270,7 @@
                             </nav>
                         </div>
                         <div class="header__btn ml-25 d-none d-md-block">
-                            <a href="contact.html" class="r-btn">Get Appointment</a>
+                            <a href="contact.html" class="r-btn">Contact Us</a>
                         </div>
                         <div class="header__bar ml-30 d-lg-none">
                             <a href="javascript:void(0);" class="extra__info-btn extra__info-btn-2"><i
@@ -1091,6 +1091,259 @@
                 </div>
             </section> -->
         <!-- blog area end -->
+
+
+
+
+
+ 
+    <style>
+        /* Gallery Styles */
+        .gallery-section {
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            font-family: 'Georgia', serif;
+            background-color: #f8f5f2;
+        }
+
+        .gallery-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            color: #5a4a3a;
+            letter-spacing: 1px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 1/1;
+            border-radius: 3px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: all 0.4s ease;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(94, 76, 61, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .gallery-overlay::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            border: 1px solid rgba(255,255,255,0.5);
+            transform: scale(0.8);
+            transition: transform 0.4s ease;
+            pointer-events: none;
+        }
+
+        .gallery-item-title {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            transform: translateY(20px);
+            transition: transform 0.4s ease;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .gallery-item-desc {
+            color: rgba(255,255,255,0.8);
+            font-size: 0.9rem;
+            transform: translateY(20px);
+            transition: transform 0.4s ease 0.1s;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        /* Hover Effects */
+        .gallery-item:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .gallery-item:hover .gallery-img {
+            transform: scale(1.05);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-item:hover .gallery-overlay::before {
+            transform: scale(1);
+        }
+
+        .gallery-item:hover .gallery-item-title,
+        .gallery-item:hover .gallery-item-desc {
+            transform: translateY(0);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 1200px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+ 
+    <section class="gallery-section">
+        <h2 class="gallery-title">All Probleam one solution</h2>
+        
+        <div class="gallery-grid">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item">
+                <img src="assets\my-folder\gallry\Basement Water Leakage Waterproofing.jpg" alt="Vintage photo 1" class="gallery-img">
+                <div class="gallery-overlay">
+                    <!-- <h3 class="gallery-item-title">Golden Days</h3>
+                    <p class="gallery-item-desc">A memory from the past</p> -->
+                </div>
+            </div>
+            
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item">
+                <img src="assets\my-folder\gallry\Heat & Waterproofing for Tin Shade.jpg" alt="Vintage photo 2" class="gallery-img">
+                <div class="gallery-overlay">
+                    <!-- <h3 class="gallery-item-title">Classic Moments</h3>
+                    <p class="gallery-item-desc">Timeless beauty</p> -->
+                </div>
+            </div>
+            
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item">
+                <img src="assets\my-folder\gallry\Landing Image 1.jpg" alt="Vintage photo 3" class="gallery-img">
+                <div class="gallery-overlay">
+                    <!-- <h3 class="gallery-item-title">Old Times</h3>
+                    <p class="gallery-item-desc">Nostalgic moments</p> -->
+                </div>
+            </div>
+            
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item">
+                <img src="assets\my-folder\gallry\Negative Side Seepage & Dampness Treatment.jpg" alt="Vintage photo 4" class="gallery-img">
+                <div class="gallery-overlay">
+                    <!-- <h3 class="gallery-item-title">Retro Vibes</h3>
+                    <p class="gallery-item-desc">Back to the past</p> -->
+                </div>
+            </div>
+            
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item">
+                <img src="assets\my-folder\gallry\New Construction Foundation Waterproofing.jpg" alt="Vintage photo 5" class="gallery-img">
+                <div class="gallery-overlay">
+                    <!-- <h3 class="gallery-item-title">Timeless</h3>
+                    <p class="gallery-item-desc">Never fading</p> -->
+                </div>
+            </div>
+            
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item">
+                <img src="assets\my-folder\gallry\Retaining Wall Water Leakage Waterproofing.jpg" alt="Vintage photo 6" class="gallery-img">
+                <div class="gallery-overlay">
+                    <!-- <h3 class="gallery-item-title">Heritage</h3>
+                    <p class="gallery-item-desc">Our legacy</p> -->
+                </div>
+            </div>
+            
+            <!-- Gallery Item 7 -->
+            <div class="gallery-item">
+                <img src="assets\my-folder\gallry\Terrace Waterproofing 2.jpg" alt="Vintage photo 7" class="gallery-img">
+                <div class="gallery-overlay">
+                    <!-- <h3 class="gallery-item-title">Antique</h3>
+                    <p class="gallery-item-desc">Precious relics</p> -->
+                </div>
+            </div>
+            
+            <!-- Gallery Item 8 -->
+            <div class="gallery-item">
+                <img src="assets\my-folder\gallry\Water Tank Waterproofing.jpg" alt="Vintage photo 8" class="gallery-img">
+                <div class="gallery-overlay">
+                    <!-- <h3 class="gallery-item-title">Memorabilia</h3>
+                    <p class="gallery-item-desc">Cherished items</p> -->
+                </div>
+            </div>
+            
+            <!-- Gallery Item 9 -->
+            <div class="gallery-item">
+                <img src="assets\my-folder\gallry\Tunnel & Bridge Waterproofing.jpg" alt="Vintage photo 9" class="gallery-img">
+                <div class="gallery-overlay">
+                    <!-- <h3 class="gallery-item-title">Classic</h3>
+                    <p class="gallery-item-desc">Eternal style</p> -->
+                </div>
+            </div>
+            
+            <!-- Gallery Item 10 -->
+            <div class="gallery-item">
+                <img src="assets\my-folder\photouser\Capillary Action Waterproofing 1 (2).jpg" alt="Vintage photo 10" class="gallery-img">
+                <div class="gallery-overlay">
+                    <!-- <h3 class="gallery-item-title">Reminiscence</h3>
+                    <p class="gallery-item-desc">Sweet memories</p> -->
+                </div>
+            </div>
+            
+            <!-- Gallery Item 11 -->
+            <div class="gallery-item">
+                <img src="assets\my-folder\gallry\Basement Water Leakage Waterproofing.jpg" alt="Vintage photo 11" class="gallery-img">
+                <div class="gallery-overlay">
+                    <!-- <h3 class="gallery-item-title">Yesterday</h3>
+                    <p class="gallery-item-desc">Gone but not forgotten</p> -->
+                </div>
+            </div>
+            
+            <!-- Gallery Item 12 -->
+            <div class="gallery-item">
+                <img src="assets\my-folder\gallry\Landing Image 1.jpg" alt="Vintage photo 12" class="gallery-img">
+                <div class="gallery-overlay">
+                    <!-- <h3 class="gallery-item-title">Vintage Charm</h3>
+                    <p class="gallery-item-desc">Enduring appeal</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+
+
+
 
     </main>
 
